@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper mt-5">
+      <div class="container">
+        <h4 class="text-center">Expense Calculator</h4>
+        <div class="incomefield d-flex mt-4">
+          <div class="form-group mr-1" id="incomeNameField">
+            <label for="incomeName">Please enter your Income Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="incomeName0"
+              placeholder="Main Income"
+            />
+          </div>
+
+          <div class="form-group ml-5" id="incomeField">
+            <label for="Income">Please Enter Your Budget</label>
+            <input type="number" id="0" class="form-control" inputid="0" />
+          </div>
+        </div>
+
+        <input
+          type="button"
+          onClick="addInputfield()"
+          class="btn btn-primary mb-2"
+          value="Add Income"
+        />
+
+        <div class="expensefield d-flex">
+          <div class="form-group" id="expenseNameField">
+            <label for="expenses">Please enter your Expenses Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="expensesName0"
+              placeholder="Food,Rents,Clothes...etc"
+            />
+          </div>
+
+          <div class="form-group ml-5" id="expenseField">
+            <label for="expenses">Please enter your Expenses Amount</label>
+            <input type="number" class="form-control" id="expenses0" />
+          </div>
+        </div>
+
+        <input
+          type="button"
+          onClick="addExpensesfield()"
+          class="btn btn-primary"
+          value="Add Expense"
+        />
+
+        <input
+          type="button"
+          onClick="calculate()"
+          class="btn btn-primary mt-3 d-block"
+          value="Calculate"
+        />
+
+        <ul id="list" class="list" list-id="0"></ul>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
